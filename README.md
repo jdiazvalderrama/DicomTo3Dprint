@@ -33,8 +33,6 @@ Este proyecto está diseñado para ser utilizado en contextos académicos y de p
 
 ### Programas Utilizados
 
-### Programas Utilizados
-
 En este proyecto, se han seleccionado dos herramientas principales que funcionan en la plataforma Windows 11 para simplificar el flujo de trabajo y maximizar la eficiencia en la conversión de imágenes DICOM a modelos 3D imprimibles. A continuación se detallan los programas utilizados:
 
 - **[Radiant](https://www.radiantviewer.com/es/):** Este software se especializa en la visualización y manejo de imágenes en formato DICOM. Su interfaz intuitiva y su robusto conjunto de herramientas permiten una óptima revisión y manipulación de datos radiológicos.
@@ -49,7 +47,25 @@ Aunque en este proyecto se optó por Radiant y Meshmixer debido a su compatibili
 
 Cada uno de estos programas ofrece diferentes ventajas y desventajas, y la elección dependerá de las necesidades específicas del proyecto y las preferencias del usuario.
 
+- ### Bases de Datos DICOM
 
+Para la creación de modelos 3D de regiones anatómicas a partir de imágenes médicas, es esencial comenzar con la adquisición de datos DICOM de Tomografía Computarizada (CT). A continuación, se listan algunas bases de datos confiables y accesibles que ofrecen imágenes DICOM gratuitas para fines académicos y de investigación:
+
+- **[The Cancer Imaging Archive (TCIA)](https://www.cancerimagingarchive.net/):** Un recurso vasto que proporciona acceso a una gran cantidad de imágenes médicas de dominio público, incluidas imágenes de CT utilizadas en estudios de investigación del cáncer.
+- **[DICOM Library](https://www.dicomlibrary.com/):** Permite subir, compartir y visualizar tus propias imágenes DICOM, así como descargar imágenes de casos anónimos proporcionados por otros usuarios.
+- **[OpenNeuro](https://openneuro.org/):** Plataforma dedicada a la libre distribución de datos de neuroimágenes, incluyendo algunos conjuntos de datos en formato DICOM.
+- **[National Biomedical Imaging Archive (NBIA)](https://imaging.nci.nih.gov/nbia/):** Repositorio mantenido por el National Cancer Institute que ofrece imágenes y datos relacionados para fomentar la investigación biomédica.
+- **[Visible Human Project CT Datasets](https://central.xnat.org/app/template/XDATScreen_report_xnat_projectData.vm/search_element/xnat:projectData/search_field/xnat:projectData.ID/search_value/HumanCT):** Parte del renombrado Visible Human Project, este recurso incluye conjuntos de datos completos de CT, permitiendo exploraciones detalladas del cuerpo humano en diferentes estados y configuraciones.
+
+Estas bases de datos son útiles tanto para profesionales que buscan mejorar sus habilidades en la manipulación y análisis de imágenes médicas como para investigadores en busca de datos para estudios más extensos.
+
+### Datos Específicos Utilizados en el Proyecto
+
+Para el desarrollo de este proyecto, se utilizó específicamente el conjunto de datos de la **pelvis de un hombre** del Visible Human Project. Este conjunto de datos ha sido clave para el modelado detallado de la anatomía pélvica en 3D. 
+
+El conjunto de datos específico empleado está disponible para consulta y uso mediante el siguiente enlace: [Visible Human Project - Pelvis Male](https://central.xnat.org/app/action/DisplayItemAction/search_element/xnat%3ActSessionData/search_field/xnat%3ActSessionData.ID/search_value/CENTRAL04_E04390/popup/false/project/HumanCT).
+
+Este recurso fue seleccionado por su calidad y detalle, proporcionando una base sólida y precisa para la creación de modelos anatómicos 3D. El uso de estos datos específicos facilita la exploración y comprensión de las complejidades anatómicas de la región pélvica, lo que es crucial para aplicaciones académicas y de planificación quirúrgica
 
 ### Flujo de Trabajo
 
