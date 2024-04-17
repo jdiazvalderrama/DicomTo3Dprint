@@ -61,19 +61,33 @@ Estas bases de datos son útiles tanto para profesionales que buscan mejorar sus
 
 ### Datos Específicos Utilizados en el Proyecto
 
+![Pelvis Model Visualized in Radiant](/Imagenes/0_Pelvis_Radiant.png)
+
 Para el desarrollo de este proyecto, se utilizó específicamente el conjunto de datos de la **pelvis de un hombre** del Visible Human Project. Este conjunto de datos ha sido clave para el modelado detallado de la anatomía pélvica en 3D. 
 
 El conjunto de datos específico empleado está disponible para consulta y uso mediante el siguiente enlace: [Visible Human Project - Pelvis Male](https://central.xnat.org/app/action/DisplayItemAction/search_element/xnat%3ActSessionData/search_field/xnat%3ActSessionData.ID/search_value/CENTRAL04_E04390/popup/false/project/HumanCT).
 
-Este recurso fue seleccionado por su calidad y detalle, proporcionando una base sólida y precisa para la creación de modelos anatómicos 3D. El uso de estos datos específicos facilita la exploración y comprensión de las complejidades anatómicas de la región pélvica, lo que es crucial para aplicaciones académicas y de planificación quirúrgica
+
+Este recurso fue seleccionado por su calidad y detalle, proporcionando una base sólida y precisa para la creación de modelos anatómicos 3D. El uso de estos datos específicos facilita la exploración y comprensión de las complejidades anatómicas de la región pélvica, lo que es crucial para aplicaciones académicas y de planificación quirúrgica.
+
+
 
 ### Flujo de Trabajo
 
-1. **Importación de Imágenes:** Cargar las imágenes DICOM en OsiriX MD para su revisión inicial.
-2. **Reconstrucción 3D:** Utilizar InVesalius para convertir las imágenes seleccionadas en un modelo 3D.
-3. **Edición del Modelo:** Refinar y preparar el modelo utilizando Meshmixer, asegurando la calidad y la precisión del diseño.
-4. **Preparación para Impresión:** Generar el G-Code usando Slic3r y realizar ajustes finales en la configuración de la impresora.
-5. **Impresión 3D:** Producir el modelo físico utilizando la impresora 3D.
+1. **Importación de Imágenes:** Cargar las imágenes DICOM en RADIANT para su revisión inicial.
+![Inicio Radiant](/Imagenes/1_inicio_Radiant.png)
+![Importar Radiant](/Imagenes/2_importar_Radiant.png)
+![Importar 2 Radiant](/Imagenes/3_importar2_Radiant.png)
+![Inicio Radiant](/Imagenes/4_CT_Image_Radiant.png)
 
-Cada paso está detalladamente descrito en los documentos adjuntos a este repositorio, con guías paso a paso para facilitar el proceso a los usuarios nuevos.
+3. **Reconstrucción 3D:** Utiliza la herramienta **3D Volume rendering**, que se encuentra en la barra de herramientas superior de Radiant, para convertir las imágenes seleccionadas en un modelo 3D. Dentro de esta función, encontrarás una opción llamada **3D Presets**, la cual te permite segmentar diferentes tipos de tejidos mediante filtros preestablecidos. Para nuestros propósitos, seleccionaremos el filtro para hueso **Bones B/W**.
+![Visión 3D en Radiant](/Imagenes/5_Vision3D_Radiant.png)
+![Filtros en Radiant](/Imagenes/6_Filtros_Radiant.png)
+
+Para una segmentación más precisa y "manual" de tejidos, puedes manipular la vista del modelo 3D usando el ratón: mantén presionado el botón del scroll y mueve el ratón hacia arriba, abajo, izquierda o derecha para ajustar la visualización del modelo según sea necesario. Esta funcionalidad es especialmente útil para explorar y afinar detalles específicos del modelo anatómico.
+
+5. **Edición del Modelo en RADIANT:** Refinar y preparar el modelo utilizando la herramienta de **Scapel** con la letra **S**, asegurando el reorte de las areas requeridas.
+6. 
+7. **Preparación para Impresión:** Generar el G-Code usando Slic3r y realizar ajustes finales en la configuración de la impresora.
+8. **Impresión 3D:** Producir el modelo físico utilizando la impresora 3D.
 
